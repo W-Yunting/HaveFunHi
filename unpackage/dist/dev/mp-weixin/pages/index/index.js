@@ -4,7 +4,8 @@ const GetGoodsList = common_vendor.Es.importObject("GetGoodsList");
 const _sfc_main = {
   data() {
     return {
-      title: "Hello"
+      title: "Hello",
+      goodsList: []
     };
   },
   onLoad() {
@@ -15,6 +16,7 @@ const _sfc_main = {
     async getGoodsList() {
       try {
         const list = await GetGoodsList.getList();
+        this.list = list;
         console.log(list);
       } catch {
       }
@@ -22,6 +24,7 @@ const _sfc_main = {
     async getSwiper() {
       try {
         const swipers = await GetGoodsList.getSwiper();
+        this.swipers = swipers;
         console.log(swipers);
       } catch {
       }
@@ -29,9 +32,7 @@ const _sfc_main = {
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return {
-    a: common_vendor.t($data.title)
-  };
+  return {};
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/gamersky/Documents/HBuilderProjects/HaveFunHi/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

@@ -1,9 +1,7 @@
 <template>
 	<view class="content">
 		<image class="logo" src="//w-yunting.github.io/images/24h.jpg"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<div></div>
 	</view>
 </template>
 
@@ -13,7 +11,8 @@ const GetGoodsList = uniCloud.importObject('GetGoodsList');
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				goodsList:[]
 			}
 		},
 		onLoad() {
@@ -24,6 +23,7 @@ const GetGoodsList = uniCloud.importObject('GetGoodsList');
            async getGoodsList(){
 				try {
 					const list = await GetGoodsList.getList();
+					this.list = list;
 					console.log(list)
 				} catch{
 					
@@ -32,6 +32,7 @@ const GetGoodsList = uniCloud.importObject('GetGoodsList');
 		   async getSwiper(){
 			   try {
 				   const swipers = await GetGoodsList.getSwiper();
+				   this.swipers = swipers
 				   console.log(swipers)
 			   }catch{
 				   

@@ -1,0 +1,1 @@
+<view class="goods-list"><view wx:for="{{a}}" wx:for-item="good" class="good-item"><image class="good-img" src="{{good.a}}"></image><view class="good-info">{{good.b}}</view></view></view>

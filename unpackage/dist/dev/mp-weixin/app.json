@@ -1,13 +1,26 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/home/index/index"
+    "pages/home/index",
+    "pages/account/account"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {}
 }

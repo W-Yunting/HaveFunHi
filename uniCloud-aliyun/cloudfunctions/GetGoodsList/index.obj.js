@@ -28,8 +28,8 @@ module.exports = {
 		}
 	}
 	*/
-   getList: function(){
-	   return db.collection('opendb-mall-goods').get();
+   getList: function(params){
+	   return db.collection('opendb-mall-goods').get(params);
    },
    getSwiper: function(){
 	   return db.collection('opendb-mall-goods').where({is_hot: true}).get();
