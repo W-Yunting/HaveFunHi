@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/home/index",
-    "pages/account/account"
+    "pages/account/account",
+    "pages/admin/add"
   ],
   "window": {
     "navigationBarTextStyle": "black",

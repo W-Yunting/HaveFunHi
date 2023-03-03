@@ -16,7 +16,6 @@ const _sfc_main = {
     };
   },
   onLoad() {
-    this.getSwiper();
   },
   methods: {
     async getSwiper() {

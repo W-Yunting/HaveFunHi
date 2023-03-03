@@ -31,7 +31,7 @@
 			}
 		},
 		onLoad() {
-			this.getSwiper();
+			// this.getSwiper();
 		},
 		methods: {
 			async getSwiper() {

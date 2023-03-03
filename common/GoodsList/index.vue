@@ -22,8 +22,9 @@
 			}
 
 		},
+        
 		mounted() {
-			this.getList();
+			// this.getList();
 		},
 		methods: {
 			async getList() {

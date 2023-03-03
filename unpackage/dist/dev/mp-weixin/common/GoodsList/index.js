@@ -12,7 +12,6 @@ const _sfc_main = {
     };
   },
   mounted() {
-    this.getList();
   },
   methods: {
     async getList() {

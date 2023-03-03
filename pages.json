@@ -17,6 +17,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/admin/add",
+			"style": {
+				"navigationBarTitleText": "新增商品"
+			}
 		}
     ],
 	"tabBar": {
